@@ -18,15 +18,19 @@ Follow these steps to set up and run the project on your local machine.
 2. Navigate to the project directory.
 
 
-3. Install the project dependencies.
+3. Install the project dependencies using this command on terminal
+
+## npm install
 
 
 ### Usage
 
-1. Start the development server.
+1. Start the development server using this command on terminal
+
+## npm run dev
 
 
-2. Open your web browser and go to `http://localhost:8000` to access the image gallery.
+3. Open your web browser and go to `http://localhost:8000` to access the image gallery.
 
 ### Features
 
