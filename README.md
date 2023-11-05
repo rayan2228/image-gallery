@@ -13,6 +13,7 @@ Follow these steps to set up and run the project on your local machine.
 ### Installation
 
 1. Clone this repository to your local machine.
+cp example.txt target-folder
 
 
 2. Navigate to the project directory.
