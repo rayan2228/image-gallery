@@ -4,6 +4,8 @@ import {
   closestCenter,
   MouseSensor,
   TouchSensor,
+  KeyboardSensor,
+  PointerSensor,
   DragOverlay,
   useSensor,
   useSensors,
@@ -12,6 +14,7 @@ import {
   arrayMove,
   SortableContext,
   rectSortingStrategy,
+  sortableKeyboardCoordinates,
 } from "@dnd-kit/sortable";
 import DragItem from "./DragItem";
 import { Sortable } from "./Sortable";
