@@ -61,7 +61,13 @@ const DraggableArea = () => {
   };
 
   // using mouse and touch sensor for drag and drop functionality
-  const sensors = useSensors(useSensor(MouseSensor));
+  // const sensors = useSensors(useSensor(MouseSensor));
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
 
   // handle dragstart event
   function handleDragStart(event) {
