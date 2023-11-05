@@ -61,10 +61,7 @@ const DraggableArea = () => {
   };
 
   // using mouse and touch sensor for drag and drop functionality
-  const sensors = useSensors(
-    useSensor(MouseSensor),
-    useSensor(TouchSensor, 1000)
-  );
+  const sensors = useSensors(useSensor(MouseSensor), useSensor(TouchSensor));
 
   // handle dragstart event
   function handleDragStart(event) {
