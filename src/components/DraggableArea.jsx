@@ -4,8 +4,6 @@ import {
   closestCenter,
   MouseSensor,
   TouchSensor,
-  KeyboardSensor,
-  PointerSensor,
   DragOverlay,
   useSensor,
   useSensors,
@@ -14,7 +12,6 @@ import {
   arrayMove,
   SortableContext,
   rectSortingStrategy,
-  sortableKeyboardCoordinates,
 } from "@dnd-kit/sortable";
 import DragItem from "./DragItem";
 import { Sortable } from "./Sortable";
@@ -64,12 +61,9 @@ const DraggableArea = () => {
   };
 
   // using mouse and touch sensor for drag and drop functionality
-  // const sensors = useSensors(useSensor(MouseSensor));
   const sensors = useSensors(
-    useSensor(PointerSensor),
-    useSensor(KeyboardSensor, {
-      coordinateGetter: sortableKeyboardCoordinates,
-    })
+    useSensor(MouseSensor),
+    useSensor(TouchSensor, 1000)
   );
 
   // handle dragstart event
